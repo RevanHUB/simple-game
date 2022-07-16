@@ -18,6 +18,8 @@ Or you can just go to releases and download it:
 * ``` Scalability ```
 
 
-# Preview: 📱![indie](https://user-images.githubusercontent.com/84904766/179370750-ef70f61d-5d80-4cb3-902d-3a633a76936b.gif)
+# Preview: 📱
+
+![indie](https://user-images.githubusercontent.com/84904766/179370750-ef70f61d-5d80-4cb3-902d-3a633a76936b.gif)
 
 
