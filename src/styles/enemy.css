@@ -1,0 +1,62 @@
+@keyframes idle {
+    0% {margin-top:-5px}
+    50% {margin-top:5px}
+    100% {margin-top:-5px}
+} 
+@keyframes closeEyes {
+    0% {height:10px}
+    20% {height:10px}
+    40% {height:10px}
+    60% {height:10px}
+    100% {height:0px}
+}
+@keyframes death {
+    0% {transform:none}
+    100% {transform:rotate(90deg); background:black}
+} 
+
+.enemy {
+    background:white;
+    width:40px;
+    height:50px;
+    top:100px;
+    position:absolute;
+    animation: .9s idle linear infinite;
+    cursor:crosshair;
+}
+.enemy:hover {
+    background:rgba(255,255,255,.7);
+}
+.enemy:before {
+    content:'';
+    background:red;
+    width:10px;
+    height:10px;
+    margin-top:10px;
+    margin-left:5px;
+    position:absolute;
+    animation: closeEyes ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.enemy:after {
+    content:'';
+    background:red;
+    width:10px;
+    height:10px;
+    margin-top:10px;
+    margin-left:25px;
+    position:absolute;
+    animation: closeEyes ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+   
+}
+.killCounter {
+    width:auto;
+    height:100px;
+    position:fixed;
+    top:20px;
+    left:20px;
+    user-select: none;
+}

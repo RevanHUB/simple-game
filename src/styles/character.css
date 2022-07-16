@@ -1,0 +1,62 @@
+ @keyframes idle {
+    0% {margin-top:-5px}
+    50% {margin-top:5px}
+    100% {margin-top:-5px}
+} 
+@keyframes closeEyes {
+    0% {height:10px}
+    20% {height:10px}
+    40% {height:10px}
+    60% {height:10px}
+    100% {height:0px}
+}
+
+.character {
+    background:red;
+    width:40px;
+    height:50px;
+
+    animation: .9s idle linear infinite;
+    position:absolute;
+    z-index:2;
+    transition:1s;
+}
+.character:before {
+    content: '';
+    background:black;
+    width:10px;
+    height:10px;
+    margin-top:10px;
+    margin-left:5px;
+    position:absolute;
+    animation: closeEyes ;
+    animation-duration: 1s;
+    animation-delay:4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 4s;
+}
+.character:after {
+    content: '';
+    background:black;
+    width:10px;
+    height:10px;
+    margin-top:10px;
+    margin-left:25px;
+    position:absolute;
+    animation: closeEyes ;
+    animation-duration: 1s;
+    animation-delay:4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 4s;
+}
+.moveup {
+    margin-top:50px;
+}
+.projectile {
+    background:gray;
+    width:5px;
+    height:5px;
+    position:absolute;
+    transition:.1s;
+    z-index:99;
+}

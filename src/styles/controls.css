@@ -1,0 +1,111 @@
+nav {
+    position:fixed; 
+    top:20px;
+    z-index:3;
+    left:20px;
+ }
+ nav button {
+    background:blueviolet;
+    color:white;
+    font-weight:bolder;
+    text-transform:uppercase;
+    padding:10px;
+    border:0px;
+    margin:0px 10px 0px 0px;
+    font-family:'Calibri';
+    font-size:1.2rem;
+ }
+
+.modalContainer {
+    background:rgba(0,0,0,.36);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    backdrop-filter: blur(8px);
+    display:none;
+    transition:.5s;
+}
+.modalContainer .modal__inside {
+    background:#f2f2f2;
+    padding:20px;
+    border-radius:5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width:40vw;
+    height:40vh;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    
+}
+.modalContainer .modal__char{
+    position:absolute;
+    right:0;
+    background:#f2f2f2;
+    padding:20px;
+    border-radius:5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width:20vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+
+.modalContainer .modal__inside  h1 {
+    color:black;
+    font-size:1.6rem;
+}
+.modalContainer .modal__inside  #preview {
+    background: blueviolet;
+    color:black;
+    display:flex;
+    align-items:center;
+    height:80px;
+    justify-content:center;
+    width:100%;
+    margin:20px 0px 0px 0px;
+    
+
+}
+
+.modalContainer .modal__inside  input {
+    background: blueviolet;
+    color:white;
+    padding:10px;
+    border:none;
+    text-transform:uppercase;
+    font-size:1.3rem;
+    width:100%;
+    margin:10px 0px 0px 0px;
+    
+
+}
+.modalContainer .modal__inside  button {
+    background: blueviolet;
+    color:white;
+    padding:10px;
+    border:none;
+    text-transform:uppercase;
+    font-size:1.3rem;
+    width:100%;
+    margin:10px 0px 0px 0px;
+    letter-spacing:-.1rem;
+
+    font-size:1.8rem;
+    
+
+}
+.show {
+    display:flex;
+}
+.hide {
+    display:none;
+}

@@ -1,0 +1,23 @@
+.map {
+    width:100vw;
+    height:100vh;
+    background:blue;
+    z-index:1;
+    display:flex;
+    position:absolute;
+}
+
+.map .limit {
+    background:red;
+    width:5%;
+    height:10%;
+    border:1px solid black;
+}
+.map .ground {
+    background:green;
+    width:5%;
+    height:10%;
+}
+.map img:hover{
+    background:black;
+}
